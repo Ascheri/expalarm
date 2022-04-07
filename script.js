@@ -59,7 +59,7 @@ function writeTime(){
     if(bringtime5.getMinutes() == 14 && bringtime5.getSeconds() >= 30){
         playaud();
         }
-    else if (bringtime5.getMinutes() == 29 && bringtime5.getSeconds() >= 30){
+    else if (bringtime5.getMinutes() == 44 && bringtime5.getSeconds() >= 30){
         playaud();
     }
     else{
