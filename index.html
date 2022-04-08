@@ -14,18 +14,21 @@
     <div id="main">경뿌 알리미</div>
     <div id="main2">
         <!--오늘은몇채널?-->
+        <span id="channel">
         <script>
             function whatDay(){
                 let today3 = new Date();
                 if(today3.getDate() <= 29){
-                    document.write(today3.getDate());
+                    channel.innerText = (today3.getDate());
                 }
                 else{
-                    document.write("몰?루");
+                    channel.innerText = ("몰?루");
                 }
             };
             whatDay();
+            setInterval(whatDay, 500000);
         </script>
+        </span>
         채널 15/45분 발록에서 경뿌</div>
     <div id="clock"></div>
 
@@ -33,7 +36,10 @@
         <center><input type="button" value="이거 눌러야 소리 나옴" 
             id ="hidebutton" class="button" onclick="showAndHide();"/></center>
         <div id="settings" style="display:none;">
-            <div class="mainscript">굿ㅋ</div>
+            <div class="mainscript">30초 전에 알려드리겠습니다.</div>
         </div>
+        <div id="links">
+            <a href="https://ascheri.github.io/flagalarm/index.html">플래그 알리미</a>
+        </div>>
 </body>
 </html>

@@ -32,6 +32,22 @@ body{
     user-select:none;
 }
 
+#links{
+    padding-top:170px;
+    text-align:center;
+    font-size:20px;
+    user-select:none;
+}
+
+#channel{
+    padding-top:15px;
+    text-align:center;
+    font-size:55px;
+    user-select:none;
+	color:red;
+	font-weight: bold;
+}
+
 #clock{
     padding-top:20px;
     font-size:70px;
