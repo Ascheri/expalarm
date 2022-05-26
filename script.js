@@ -23,13 +23,10 @@ function showAndHide(){
     document.getElementById("settings").style.display="block";
     document.getElementById("settings").style.height="100%";
     document.getElementById("settings").style.animation="brighter 0.3s";
-    hidebutton.value="굿";
+    document.getElementById("hidebutton").style.display="none";
     }
     else {
-    isHidden = isHidden - 1;
-    document.getElementById("settings").style.animation="darker 0.3s forwards";
-    document.getElementById("settings").style.height="0px";
-    hidebutton.value="굿";
+        alert('?');
     }
 }
 
@@ -44,12 +41,12 @@ audio1.volume = 0.5;
 //playaud
 function playaud(){
     audio1.play();
-    audio1.volume = 0.5;
+    audio1.volume = 0.35;
 }
 
 //stopaud
 function stopaud(){
-    audio1.volume = 0.0;
+    audio1.pause();
 }
 
 //시간 출력, 오디오 재생
@@ -68,5 +65,15 @@ function writeTime(){
 
 }
 setInterval(writeTime, 500);
+
+//Whatday
+function whatDay(){
+    let today3 = new Date();
+    channel.innerText = (today3.getDate());
+};
+
+whatDay();
+setInterval(whatDay, 500000);
+
 
 // 콘솔로그 -     console.log(` ${bringtime5.getMinutes()}분${bringtime5.getSeconds()}초`);
